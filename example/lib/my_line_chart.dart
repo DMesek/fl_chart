@@ -20,7 +20,7 @@ class _MyLineChartState extends State<MyLineChart> {
     return Stack(
       children: <Widget>[
         AspectRatio(
-          aspectRatio: 1.70,
+          aspectRatio: 2,
           child: Container(
             decoration: const BoxDecoration(
               color: Colors.white,
@@ -121,6 +121,7 @@ class _MyLineChartState extends State<MyLineChart> {
             FlSpot(11, 4),
           ],
           isCurved: true,
+          curveSmoothness: 0.3,
           colors: gradientColors,
           barWidth: 3,
           isStrokeCapRound: true,
