@@ -1,3 +1,4 @@
+import 'package:example/my_line_chart.dart';
 import 'package:example/radar_chart/radar_chart_page.dart';
 import 'package:example/scatter_chart/scatter_chart_page.dart';
 import 'package:flutter/material.dart';
@@ -48,6 +49,7 @@ class _MyHomePageState extends State<MyHomePage> {
   final _duration = const Duration(milliseconds: 300);
   final _curve = Curves.easeInOutCubic;
   final _pages = const [
+    MyLineChart(),
     LineChartPage(),
     BarChartPage(),
     BarChartPage2(),
@@ -57,7 +59,6 @@ class _MyHomePageState extends State<MyHomePage> {
     LineChartPage4(),
     BarChartPage3(),
     ScatterChartPage(),
-    RadarChartPage(),
   ];
 
   bool get isDesktopOrWeb => PlatformInfo().isDesktopOrWeb();

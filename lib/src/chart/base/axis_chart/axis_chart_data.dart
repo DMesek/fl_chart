@@ -323,6 +323,8 @@ class SideTitles with EquatableMixin {
   final double? interval;
   final double rotateAngle;
   final TextAlign textAlign;
+  final double normalizationPaddingTop;
+  final double normalizationPaddingLeft;
   final CheckToShowTitle checkToShowTitle;
 
   /// It draws some title on all axis, per each axis value,
@@ -355,6 +357,8 @@ class SideTitles with EquatableMixin {
     double? margin,
     double? interval,
     double? rotateAngle,
+    this.normalizationPaddingTop = 10,
+    this.normalizationPaddingLeft = 50,
     TextAlign? textAlign,
     CheckToShowTitle? checkToShowTitle,
   })  : showTitles = showTitles ?? false,
